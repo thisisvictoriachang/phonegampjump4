@@ -1,15 +1,16 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	
-	<head> 
-		<meta charset="UTF-8" />
-		<title>JavaScript Program Template</title>
-	</head>
-	
-	<body>
-        <button id="clear">Clear visit data</button>
-		
-		
-    </body>
-	
+  <head>
+    <title>Create HTML5 Canvas JavaScript Game Character Example</title>
+    <!--[if IE]><script type="text/javascript" src="excanvas.js"></script><![endif]-->
+  </head>
+  <body>
+    <div id="canvasDiv"></div>
+    <script type="text/javascript" src="html5-canvas-game-character-2.js"></script>
+    <script type="text/javascript">
+    	prepareCanvas(document.getElementById("canvasDiv"), 490, 220);
+		document.getElementById("canvasDiv").onmousedown = function() { 
+			jump(); }
+    </script>
+  </body>
 </html>
