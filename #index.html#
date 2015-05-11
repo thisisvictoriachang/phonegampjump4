@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+	
+	<head> 
+		<meta charset="UTF-8" />
+		<title>JavaScript Program Template</title>
+	</head>
+	
+	<body>
+        <button id="clear">Clear visit data</button>
+		
+        
+        <script>
+        
+        </script>
+		
+    </body>
+	
+</html>
