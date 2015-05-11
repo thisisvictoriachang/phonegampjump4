@@ -34,7 +34,7 @@ var x = 0, y = 0,
 	ax = 0, ay = 0;
 	
 var sphere = document.getElementById("sphere");
-
+/*
 if (window.DeviceMotionEvent != undefined) {
 	window.ondevicemotion = function(e) {
 		ax = event.accelerationIncludingGravity.x * 5;
@@ -49,7 +49,7 @@ if (window.DeviceMotionEvent != undefined) {
 			document.getElementById("rotationGamma").innerHTML = e.rotationRate.gamma;
 		}		
 	}
-
+*/
 	setInterval( function() {
 		var landscapeOrientation = window.innerWidth/window.innerHeight > 1;
 		if ( landscapeOrientation) {
@@ -59,8 +59,8 @@ if (window.DeviceMotionEvent != undefined) {
 			vy = vy - ay;
 			vx = vx + ax;
 		}
-		vx = vx * 0.98;
-		vy = vy * 0.98;
+		vx = vx * -0.98;
+		vy = vy * -0.98;
 		y = parseInt(y + vy / 50);
 		x = parseInt(x + vx / 50);
 		
